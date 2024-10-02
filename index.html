@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebNotas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lançamento de Notinhas</h1>
+
+        <!-- Seção de Input para adicionar Notinhas -->
+        <div class="secaoInput">
+            <input type="text" id="tituloInput" placeholder="Digite o título da notinha">
+            <textarea id="textoInput" placeholder="Digite o conteúdo da notinha"></textarea>
+        </div>
+
+        <button id="botaoAdd" onclick="adicionarNotinha()">Salvar Notinha</button>
+
+        <hr>
+
+        <!-- Seção de Pesquisa de Notinhas -->
+        <div class="secaoPesquisa">
+            <input type="text" id="pesquisaInput" placeholder="Pesquisar notinhas" onkeyup="pesquisarNotinhas()">
+        </div>
+
+        <!-- Lista de Notinhas -->
+        <div id="listaNotinhas">
+            <!-- As notinhas aparecerão aqui -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
